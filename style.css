@@ -1,0 +1,118 @@
+@keyframes glow {
+    0% {background-color: #ff0000;}
+    50% {background-color: #0059ff;}
+    75% {background-color: #980ada;}
+    100% {background-color: rgb(228, 66, 155);}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ff0000;
+    animation: glow 5s infinite;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    
+}
+h1 {
+    margin-bottom: 100px;
+
+}
+#result {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+}
+
+.optimus-prime { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+}
